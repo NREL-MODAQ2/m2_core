@@ -47,7 +47,7 @@ def generate_launch_description():
     respawn = True
     ),
     Node(
-    package    = "labjack_t8_ros",
+    package    = "labjack_t8_ros2",
     executable = "labjack_ain_streamer",
     name = "LabjackAINFast",
     parameters = [config],
@@ -55,7 +55,7 @@ def generate_launch_description():
     respawn = True
     ), 
     Node(
-    package    = "labjack_t8_ros",
+    package    = "labjack_t8_ros2",
     executable = "labjack_ain_reader",
     name = "LabjackAINSlow",
     parameters = [config],
@@ -63,7 +63,7 @@ def generate_launch_description():
     respawn = True
     ),    
     Node(
-    package    = "labjack_t8_ros",
+    package    = "labjack_t8_ros2",
     executable = "labjack_do_node",
     name = "LabjackDO",
     parameters = [config],
@@ -71,7 +71,7 @@ def generate_launch_description():
     respawn = True
     ),
     Node(
-    package    = "labjack_t8_ros",
+    package    = "labjack_t8_ros2",
     executable = "labjack_dac_writer",
     name = "LabjackDAC",
     parameters = [config],
@@ -79,7 +79,7 @@ def generate_launch_description():
     respawn = True
     ),   
     Node(
-    package    = "labjack_t8_ros",
+    package    = "labjack_t8_ros2",
     executable = "labjack_dio_reader",
     name = "LabjackDIN",
     parameters = [config],
