@@ -128,6 +128,14 @@ def generate_launch_description():
     output='screen',
     parameters=[config],
     arguments=[]
+    ),
+    Node(
+    package='parquet_writer',
+    executable='parquet_write_consumer',
+    name='M2parquet',
+    output='screen',
+    parameters=[config],
+    arguments=[]
     )
   ]
                            
